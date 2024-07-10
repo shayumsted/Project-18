@@ -8,8 +8,7 @@ const RateMovieButton = ({ movie }) => {
 
   const handleRating = (rate) => {
     setRating(rate);
-    setSubmitted(true);
-  };
+    setSubmitted(true);};
 
   return (
     <div>
@@ -21,7 +20,7 @@ const RateMovieButton = ({ movie }) => {
           </button>
         ))}
       </div>
-      {submitted && <p>Thank you for rating!</p>}
+      {submitted && <p>Thanks for rating! </p>}
     </div>);};
 
 export default RateMovieButton
