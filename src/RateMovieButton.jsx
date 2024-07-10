@@ -1,5 +1,5 @@
 // U78784426
-// src/RateMovieButton.js
+// src/RateMovieButton.jsx
 import React, { useState } from 'react';
 
 const RateMovieButton = ({ movie }) => {
