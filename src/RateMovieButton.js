@@ -3,24 +3,22 @@
 import React, { useState } from 'react';
 
 const RateMovieButton = ({ movie }) => {
-  const [rating, setRating] = useState(0);
-  const [submitted, setSubmitted] = useState(false);
+  const [rating, setRating] = useState(null);
+  const [feedback, setFeedback] = useState('');
 
-  const handleRating = (rate) => {
-    setRating(rate);
-    setSubmitted(true);};
+  const handleRatingSubmit = () => {
+    if (rating) {
+      setFeedback('Thanks for rating the movie!');
+    } else {
+      setFeedback('Please select a rating before submitting.');
+    }};
 
   return (
     <div>
-      <h3>Rate {movie}</h3>
-      <div>
-        {[1, 2, 3, 4, 5].map((star) => (
-          <button key={star} onClick={() => handleRating(star)}>
-            {star} {star <= rating ? '★' : '☆'}
-          </button>
-        ))}
-      </div>
-      {submitted && <p>Thanks for rating! </p>}
+      <h3>Rate this movie:</h3>
+      <input type="number" min="1" max="5" value={rating} onChange={(e) => setRating(e.target.value)} />
+      <button onClick={handleRatingSubmit}>Submit Rating</button>
+      <p>{feedback}</p>
     </div>);};
 
-export default RateMovieButton
+export default RateMovieButton;
