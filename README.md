@@ -1,1 +1,1 @@
-# Project-18
+We will be working to develop a new, imporved version of our platform toolbar. The toolbar will have new features that will increase engagement while providing a simple, thorough use of the platform. The toolbar will also allow for user feedback to make room for future improvements. 
