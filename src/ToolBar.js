@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import MovieSelector from './MovieSelector';
 import RateMovieButton from './RateMovieButton';
+import './Toolbar.css';
 
 const Toolbar = ({ movies }) => {
   const [selectedMovie, setSelectedMovie] = useState(movies[0]);

@@ -1,0 +1,21 @@
+/* src/components/Toolbar.css */
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #8f7676;
+    border-radius: 10px;}
+  
+  .toolbar button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: rgb(129, 115, 143);
+    cursor: pointer;}
+  
+  .toolbar button:disabled {
+    background-color: #c9b898;}
+  
